@@ -1,0 +1,94 @@
+# ============================================
+# EvolutionERP - .gitignore
+# ============================================
+
+# === Pastas de IDE e Ferramentas ===
+.claude/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# === Node.js / NPM ===
+node_modules/
+npm-debug.log
+yarn-error.log
+package-lock.json
+yarn.lock
+.pnpm-debug.log
+
+# === Frontend Build ===
+frontend/dist/
+frontend/.vite/
+frontend/node_modules/
+
+# === PHP / Composer ===
+backend/vendor/
+backend/composer.lock
+
+# === Laravel ===
+backend/.env
+backend/.env.backup
+backend/.env.production
+backend/storage/*.key
+backend/storage/logs/*.log
+backend/storage/framework/cache/*
+backend/storage/framework/sessions/*
+backend/storage/framework/testing/*
+backend/storage/framework/views/*
+!backend/storage/framework/.gitkeep
+!backend/storage/framework/cache/.gitkeep
+!backend/storage/framework/sessions/.gitkeep
+!backend/storage/framework/testing/.gitkeep
+!backend/storage/framework/views/.gitkeep
+
+# === Uploads e Arquivos Temporários ===
+backend/storage/app/public/uploads/*
+!backend/storage/app/public/uploads/.gitkeep
+backend/storage/app/public/chat_uploads/*
+!backend/storage/app/public/chat_uploads/.gitkeep
+backend/temp_log.txt
+backend/bootstrap/cache/*
+!backend/bootstrap/cache/.gitkeep
+
+# === Database ===
+*.sqlite
+*.sqlite-journal
+backend/database/*.sqlite
+backend/database/*.sqlite-journal
+
+# === OS ===
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# === Logs ===
+*.log
+logs/
+*.out
+
+# === Documentação Temporária (manter principais) ===
+CORRECAO_*.md
+FORMATACAO_*.md
+OTIMIZACOES_*.md
+REDESIGN_*.md
+RESPONSIVIDADE_*.md
+SISTEMA_COMPLETO_*.md
+SISTEMA_DOCUMENTOS.md
+SISTEMA_PRONTO.md
+ENTREGA_FINAL.txt
+SYSTEM_READY.txt
+TEST_LOGIN.html
+token_response.json
+NUL
+
+# === Manter arquivos importantes de documentação ===
+!README.txt
+!COMECE_AQUI.md
+!DOCUMENTACAO_COMPLETA_ERP.md
+!EVOLUTIA_README.md
+!GUIA_RAPIDO.md
+!COMO_ACESSAR_LOCALMENTE.md
+!INICIAR.bat
